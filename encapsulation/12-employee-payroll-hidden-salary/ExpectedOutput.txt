@@ -1,0 +1,53 @@
+=== Employee Payroll Hidden Salary Demo ===
+
+=== Employee Creation ===
+Creating employees...
+Manager: John Smith (ID: M001)
+Developer: Alice Johnson (ID: D001)
+HR Staff: Bob Wilson (ID: H001)
+Intern: Charlie Brown (ID: I001)
+
+=== Salary Information Access ===
+
+=== Manager Access ===
+Manager John Smith accessing salary information...
+✅ Access granted: Manager can view all salary information
+John Smith (Manager): $120,000.00
+Alice Johnson (Developer): $80,000.00
+Bob Wilson (HR Staff): $60,000.00
+Charlie Brown (Intern): $30,000.00
+
+=== HR Staff Access ===
+HR Staff Bob Wilson accessing salary information...
+✅ Access granted: HR can view all salary information
+John Smith (Manager): $120,000.00
+Alice Johnson (Developer): $80,000.00
+Bob Wilson (HR Staff): $60,000.00
+Charlie Brown (Intern): $30,000.00
+
+=== Developer Access ===
+Developer Alice Johnson accessing salary information...
+❌ Access denied: Insufficient privileges
+Alice Johnson can only view: $80,000.00
+
+=== Intern Access ===
+Intern Charlie Brown accessing salary information...
+❌ Access denied: Insufficient privileges
+Charlie Brown can only view: $30,000.00
+
+=== Salary Updates ===
+Manager updating developer salary...
+✅ Salary updated: Alice Johnson now earns $85,000.00
+HR updating intern salary...
+✅ Salary updated: Charlie Brown now earns $32,000.00
+
+=== Unauthorized Access Attempts ===
+Unauthorized user attempting to access salaries...
+❌ Access denied: Unauthorized access attempt
+Security Alert: Unauthorized salary access attempt
+
+=== Summary ===
+✅ Employee payroll system working perfectly!
+✅ Role-based salary access enforced
+✅ Unauthorized access prevented
+✅ Salary updates properly controlled

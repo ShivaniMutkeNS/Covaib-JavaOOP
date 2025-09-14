@@ -1,0 +1,57 @@
+=== Smart Home Device State Management Demo ===
+
+=== Device Initialization ===
+Smart Light created
+Initial state: OFF
+Power level: 0%
+Brightness: 0%
+
+=== State Transitions ===
+Turning device ON...
+✅ Device turned ON successfully
+Current state: ON
+Power level: 100%
+Brightness: 50%
+
+Setting brightness to 75%...
+✅ Brightness set to 75%
+Current brightness: 75%
+
+Setting brightness to 25%...
+✅ Brightness set to 25%
+Current brightness: 25%
+
+Turning device OFF...
+✅ Device turned OFF successfully
+Current state: OFF
+Power level: 0%
+Brightness: 0%
+
+=== Invalid State Transitions ===
+Attempting to set brightness while OFF...
+❌ Cannot set brightness while device is OFF
+Attempting to turn ON while already ON...
+❌ Device is already ON
+Attempting to turn OFF while already OFF...
+❌ Device is already OFF
+
+=== State Validation ===
+Valid states: [OFF, ON, STANDBY, ERROR]
+Current state: OFF
+Is valid state: true
+Can transition to ON: true
+Can transition to STANDBY: false
+
+=== Device Information ===
+Device ID: LIGHT_001
+Device Type: Smart Light
+Current State: OFF
+Power Level: 0%
+Brightness: 0%
+Last Updated: 2024-01-15T10:30:00
+
+=== Summary ===
+✅ Smart device state management working perfectly!
+✅ State transitions properly controlled
+✅ Invalid operations prevented
+✅ Device information properly encapsulated

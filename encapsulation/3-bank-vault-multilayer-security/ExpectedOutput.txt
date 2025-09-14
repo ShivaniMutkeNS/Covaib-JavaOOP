@@ -1,0 +1,56 @@
+=== Bank Vault Multi-Layer Security Demo ===
+
+=== Vault Initialization ===
+Vault created with initial balance: $1,000,000.00
+Security level: MAXIMUM
+Access attempts: 0
+Lock status: UNLOCKED
+
+=== Layer 1: Basic Authentication ===
+Attempting access with correct credentials...
+✅ Layer 1 passed: Basic authentication successful
+Attempting access with incorrect credentials...
+❌ Layer 1 failed: Invalid credentials
+
+=== Layer 2: Role-Based Access ===
+Manager attempting withdrawal...
+✅ Layer 2 passed: Manager access granted
+Teller attempting large withdrawal...
+❌ Layer 2 failed: Insufficient privileges for amount: $50000.00
+
+=== Layer 3: Amount Validation ===
+Manager attempting valid withdrawal...
+✅ Layer 3 passed: Withdrawal successful
+Amount: $10,000.00
+New balance: $990,000.00
+Manager attempting excessive withdrawal...
+❌ Layer 3 failed: Withdrawal amount exceeds daily limit
+
+=== Layer 4: Time-Based Restrictions ===
+Attempting withdrawal during business hours...
+✅ Layer 4 passed: Withdrawal allowed during business hours
+Attempting withdrawal after hours...
+❌ Layer 4 failed: Withdrawals not allowed after business hours
+
+=== Layer 5: Audit Trail ===
+Audit log entries: 8
+Recent activities:
+- Vault accessed by Manager
+- Withdrawal of $10,000.00 by Manager
+- Failed withdrawal attempt by Teller
+- Failed withdrawal attempt by Manager (excessive amount)
+- Failed withdrawal attempt by Manager (after hours)
+
+=== Security Status ===
+Current balance: $990,000.00
+Security level: MAXIMUM
+Access attempts: 8
+Failed attempts: 4
+Success rate: 50.0%
+Lock status: UNLOCKED
+
+=== Summary ===
+✅ Multi-layer security system working perfectly!
+✅ All 5 security layers are functioning
+✅ Audit trail is comprehensive
+✅ Access control is properly enforced

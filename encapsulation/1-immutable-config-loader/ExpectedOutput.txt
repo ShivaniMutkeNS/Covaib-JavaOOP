@@ -1,0 +1,61 @@
+=== Immutable App Config Loader Demo ===
+
+Configuration loaded: Config{properties={database.url=jdbc:mysql://localhost:3306/mydb, database.username=admin, database.password=secret123, app.name=MyApp, app.version=1.0.0, app.debug=true, server.port=8080, server.host=localhost, cache.size=1000, cache.ttl=3600}}
+
+=== Configuration Properties ===
+Database URL: jdbc:mysql://localhost:3306/mydb
+Database Username: admin
+Database Password: ********
+App Name: MyApp
+App Version: 1.0.0
+Debug Mode: true
+Server Port: 8080
+Server Host: localhost
+Cache Size: 1000
+Cache TTL: 3600
+
+=== All Configuration Keys ===
+Total properties: 10
+Keys: [database.url, database.username, database.password, app.name, app.version, app.debug, server.port, server.host, cache.size, cache.ttl]
+
+=== Configuration Validation ===
+✅ Database configuration is valid
+✅ App configuration is valid
+✅ Server configuration is valid
+✅ Cache configuration is valid
+
+=== Immutability Test ===
+Original config: Config{properties={database.url=jdbc:mysql://localhost:3306/mydb, database.username=admin, database.password=secret123, app.name=MyApp, app.version=1.0.0, app.debug=true, server.port=8080, server.host=localhost, cache.size=1000, cache.ttl=3600}}
+Config after 5 seconds: Config{properties={database.url=jdbc:mysql://localhost:3306/mydb, database.username=admin, database.password=secret123, app.name=MyApp, app.version=1.0.0, app.debug=true, server.port=8080, server.host=localhost, cache.size=1000, cache.ttl=3600}}
+✅ Configuration is immutable - no changes detected
+
+=== Singleton Test ===
+Config instance 1: Config{properties={database.url=jdbc:mysql://localhost:3306/mydb, database.username=admin, database.password=secret123, app.name=MyApp, app.version=1.0.0, app.debug=true, server.port=8080, server.host=localhost, cache.size=1000, cache.ttl=3600}}
+Config instance 2: Config{properties={database.url=jdbc:mysql://localhost:3306/mydb, database.username=admin, database.password=secret123, app.name=MyApp, app.version=1.0.0, app.debug=true, server.port=8080, server.host=localhost, cache.size=1000, cache.ttl=3600}}
+✅ Singleton pattern working - same instance returned
+
+=== Thread Safety Test ===
+Thread 1: Config{properties={database.url=jdbc:mysql://localhost:3306/mydb, database.username=admin, database.password=secret123, app.name=MyApp, app.version=1.0.0, app.debug=true, server.port=8080, server.host=localhost, cache.size=1000, cache.ttl=3600}}
+Thread 2: Config{properties={database.url=jdbc:mysql://localhost:3306/mydb, database.username=admin, database.password=secret123, app.name=MyApp, app.version=1.0.0, app.debug=true, server.port=8080, server.host=localhost, cache.size=1000, cache.ttl=3600}}
+Thread 3: Config{properties={database.url=jdbc:mysql://localhost:3306/mydb, database.username=admin, database.password=secret123, app.name=MyApp, app.version=1.0.0, app.debug=true, server.port=8080, server.host=localhost, cache.size=1000, cache.ttl=3600}}
+Thread 4: Config{properties={database.url=jdbc:mysql://localhost:3306/mydb, database.username=admin, database.password=secret123, app.name=MyApp, app.version=1.0.0, app.debug=true, server.port=8080, server.host=localhost, cache.size=1000, cache.ttl=3600}}
+Thread 5: Config{properties={database.url=jdbc:mysql://localhost:3306/mydb, database.username=admin, database.password=secret123, app.name=MyApp, app.version=1.0.0, app.debug=true, server.port=8080, server.host=localhost, cache.size=1000, cache.ttl=3600}}
+✅ Thread safety verified - all threads got same instance
+
+=== Performance Test ===
+Loading config 1000 times...
+Time taken: 15ms
+Average time per load: 0.015ms
+✅ Performance is excellent
+
+=== Error Handling Test ===
+Trying to load non-existent config file...
+✅ Error handled gracefully: Configuration file not found: nonexistent.properties
+
+=== Summary ===
+✅ Immutable Configuration Loader working perfectly!
+✅ Singleton pattern implemented correctly
+✅ Thread-safe access verified
+✅ Performance is excellent
+✅ Error handling works properly
+✅ Configuration properties are properly encapsulated

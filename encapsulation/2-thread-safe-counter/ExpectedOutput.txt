@@ -1,0 +1,48 @@
+=== Thread-Safe Counter Demo ===
+
+=== Basic Counter Operations ===
+Initial count: 0
+After increment: 1
+After decrement: 0
+After add(5): 5
+After subtract(2): 3
+Final count: 3
+
+=== Thread Safety Test ===
+Starting 10 threads, each incrementing 1000 times...
+All threads completed!
+Final count: 10000
+Expected count: 10000
+✅ Thread safety verified!
+
+=== Concurrent Operations Test ===
+Starting mixed operations with 5 threads...
+Thread 1: Incrementing 500 times
+Thread 2: Decrementing 300 times
+Thread 3: Adding 200
+Thread 4: Subtracting 100
+Thread 5: Incrementing 400 times
+All threads completed!
+Final count: 1700
+✅ Concurrent operations successful!
+
+=== Performance Test ===
+Performing 100,000 operations...
+Operations completed in: 45ms
+Operations per second: 2,222,222
+✅ Excellent performance!
+
+=== Counter State Management ===
+Current count: 1700
+Is zero: false
+Is positive: true
+Is negative: false
+Reset counter...
+Count after reset: 0
+Is zero: true
+
+=== Summary ===
+✅ Thread-safe counter working perfectly!
+✅ All operations are atomic and thread-safe
+✅ Performance is excellent
+✅ State management works correctly

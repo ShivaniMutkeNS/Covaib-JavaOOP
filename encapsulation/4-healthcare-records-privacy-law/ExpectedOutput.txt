@@ -1,0 +1,62 @@
+=== Healthcare Records Privacy Law Demo ===
+
+=== Patient Record Creation ===
+Patient: John Doe (ID: P001)
+DOB: 1990-05-15
+Medical History: Hypertension, Diabetes
+Current Medications: Metformin, Lisinopril
+Allergies: Penicillin
+Emergency Contact: Jane Doe (555-0123)
+
+=== Role-Based Access Control ===
+
+=== Doctor Access ===
+Dr. Smith (Doctor) accessing patient record...
+✅ Access granted: Doctor can view full medical information
+Medical History: Hypertension, Diabetes
+Current Medications: Metformin, Lisinopril
+Allergies: Penicillin
+Lab Results: Available
+Treatment Notes: Available
+
+=== Nurse Access ===
+Nurse Johnson (Nurse) accessing patient record...
+✅ Access granted: Nurse can view limited medical information
+Current Medications: Metformin, Lisinopril
+Allergies: Penicillin
+Lab Results: Available
+Treatment Notes: Not accessible
+
+=== Billing Staff Access ===
+Billing Staff (Billing) accessing patient record...
+✅ Access granted: Billing staff can view billing information only
+Insurance Information: Available
+Billing History: Available
+Payment Status: Available
+Medical History: Not accessible
+
+=== Patient Access ===
+Patient John Doe accessing own record...
+✅ Access granted: Patient can view own basic information
+Personal Information: Available
+Appointment History: Available
+Basic Medical Info: Available
+Detailed Medical History: Not accessible
+
+=== Unauthorized Access Attempts ===
+Unauthorized user attempting access...
+❌ Access denied: Unauthorized access attempt logged
+Security Alert: Unauthorized access attempt from unknown user
+
+=== Privacy Compliance ===
+✅ HIPAA compliance verified
+✅ Data encryption in place
+✅ Access logging enabled
+✅ Audit trail maintained
+✅ Patient consent recorded
+
+=== Summary ===
+✅ Healthcare privacy system working perfectly!
+✅ Role-based access control enforced
+✅ HIPAA compliance maintained
+✅ Security measures in place
