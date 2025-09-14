@@ -24,6 +24,12 @@ public class ShoppingCartDemo {
         
         // Test immutability
         testImmutability();
+        
+        // Test cart operations
+        testCartOperations();
+        
+        // Test cart summary
+        testCartSummary();
     }
     
     private static void testBasicCartOperations() {

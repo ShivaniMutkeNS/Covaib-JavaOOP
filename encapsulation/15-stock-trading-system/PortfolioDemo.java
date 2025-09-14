@@ -24,6 +24,12 @@ public class PortfolioDemo {
         
         // Test unauthorized access
         testUnauthorizedAccess();
+        
+        // Test transaction filtering
+        testTransactionFiltering();
+        
+        // Test portfolio with many transactions
+        testManyTransactions();
     }
     
     private static void testPortfolioCreationAndTrading() {

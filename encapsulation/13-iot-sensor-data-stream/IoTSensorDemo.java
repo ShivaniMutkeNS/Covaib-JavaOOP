@@ -23,6 +23,15 @@ public class IoTSensorDemo {
         
         // Test data validation
         testDataValidation();
+        
+        // Test time range filtering
+        testTimeRangeFiltering();
+        
+        // Test sensor configuration
+        testSensorConfiguration();
+        
+        // Test sensor with multiple readings
+        testMultipleReadings();
     }
     
     private static void testBasicSensorOperations() {

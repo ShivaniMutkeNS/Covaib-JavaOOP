@@ -20,6 +20,12 @@ public class EmployeeDemo {
         
         // Test unauthorized access
         testUnauthorizedAccess();
+        
+        // Test employee summary for different roles
+        testEmployeeSummary();
+        
+        // Test salary calculations
+        testSalaryCalculations();
     }
     
     private static void testRoleAccessLevels() {

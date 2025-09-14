@@ -1,7 +1,7 @@
 public class PaymentDemo {
     public static void main(String[] args) {
         System.out.println("💳 PAYMENT GATEWAY SYSTEM 💳");
-        System.out.println("=" .repeat(50));
+        System.out.println("==================================================");
         
         Payment[] payments = {
             new CreditCardPayment("PAY001", "CUST001", 100.0, "USD", "Online Purchase", "MERCH001", "ORD001", 
@@ -32,7 +32,7 @@ public class PaymentDemo {
         
         System.out.println("\n💰 FEE COMPARISON:");
         System.out.println("Payment Method\t\tAmount\t\tFee\t\tTotal");
-        System.out.println("-".repeat(50));
+        System.out.println("--------------------------------------------------");
         for (Payment payment : payments) {
             System.out.printf("%-15s\t%s%.2f\t\t%s%.2f\t\t%s%.2f%n", 
                             payment.getPaymentMethod(), payment.getCurrency(), payment.getAmount(),

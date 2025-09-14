@@ -20,6 +20,9 @@ public class CounterDemo {
         
         // Test min/max tracking
         testMinMaxTracking();
+        
+        // Test thread safety comparison
+        demonstrateThreadSafetyDifference();
     }
     
     private static void testBasicOperations() {

@@ -123,21 +123,21 @@ public class MoneyDemo {
         
         // Test currency validation
         try {
-            Money invalid = usdMoney.add(eurMoney);
+            usdMoney.add(eurMoney);
             System.out.println("ERROR: Should not allow different currencies");
         } catch (IllegalArgumentException e) {
             System.out.println("✓ Correctly prevented different currency addition: " + e.getMessage());
         }
         
         try {
-            Money invalid = usdMoney.subtract(eurMoney);
+            usdMoney.subtract(eurMoney);
             System.out.println("ERROR: Should not allow different currencies");
         } catch (IllegalArgumentException e) {
             System.out.println("✓ Correctly prevented different currency subtraction: " + e.getMessage());
         }
         
         try {
-            boolean comparison = usdMoney.isGreaterThan(eurMoney);
+            usdMoney.isGreaterThan(eurMoney);
             System.out.println("ERROR: Should not allow different currency comparison");
         } catch (IllegalArgumentException e) {
             System.out.println("✓ Correctly prevented different currency comparison: " + e.getMessage());

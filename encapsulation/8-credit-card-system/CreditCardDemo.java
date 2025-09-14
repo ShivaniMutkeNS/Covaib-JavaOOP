@@ -22,6 +22,12 @@ public class CreditCardDemo {
         
         // Test card validation
         testCardValidation();
+        
+        // Test card expiration scenarios
+        testCardExpiration();
+        
+        // Test full card details access
+        testFullCardDetails();
     }
     
     private static void testValidCreditCard() {
@@ -57,7 +63,7 @@ public class CreditCardDemo {
         
         // Test invalid card number
         try {
-            CreditCard card = new CreditCard("1234567890123456", "123", "Jane Doe", LocalDate.now().plusYears(1));
+            new CreditCard("1234567890123456", "123", "Jane Doe", LocalDate.now().plusYears(1));
             System.out.println("ERROR: Should not create invalid card");
         } catch (IllegalArgumentException e) {
             System.out.println("✓ Correctly rejected invalid card number: " + e.getMessage());
@@ -65,7 +71,7 @@ public class CreditCardDemo {
         
         // Test invalid CVV
         try {
-            CreditCard card = new CreditCard("4532015112830366", "12", "Jane Doe", LocalDate.now().plusYears(1));
+            new CreditCard("4532015112830366", "12", "Jane Doe", LocalDate.now().plusYears(1));
             System.out.println("ERROR: Should not create invalid CVV");
         } catch (IllegalArgumentException e) {
             System.out.println("✓ Correctly rejected invalid CVV: " + e.getMessage());
@@ -73,7 +79,7 @@ public class CreditCardDemo {
         
         // Test expired card
         try {
-            CreditCard card = new CreditCard("4532015112830366", "123", "Jane Doe", LocalDate.now().minusDays(1));
+            new CreditCard("4532015112830366", "123", "Jane Doe", LocalDate.now().minusDays(1));
             System.out.println("ERROR: Should not create expired card");
         } catch (IllegalArgumentException e) {
             System.out.println("✓ Correctly rejected expired card: " + e.getMessage());
@@ -81,7 +87,7 @@ public class CreditCardDemo {
         
         // Test empty cardholder name
         try {
-            CreditCard card = new CreditCard("4532015112830366", "123", "", LocalDate.now().plusYears(1));
+            new CreditCard("4532015112830366", "123", "", LocalDate.now().plusYears(1));
             System.out.println("ERROR: Should not create card with empty name");
         } catch (IllegalArgumentException e) {
             System.out.println("✓ Correctly rejected empty cardholder name: " + e.getMessage());
@@ -188,7 +194,7 @@ public class CreditCardDemo {
         
         for (String number : testNumbers) {
             try {
-                CreditCard card = new CreditCard(number, "123", "Test User", LocalDate.now().plusYears(1));
+                new CreditCard(number, "123", "Test User", LocalDate.now().plusYears(1));
                 System.out.println(number + ": VALID");
             } catch (IllegalArgumentException e) {
                 System.out.println(number + ": INVALID - " + e.getMessage());

@@ -31,6 +31,9 @@ public class VaultDemo {
         
         // Display audit log
         displayAuditLog(vault);
+        
+        // Test thread safety
+        testThreadSafety();
     }
     
     private static void testSuccessfulWithdrawal(VaultBalance vault) {

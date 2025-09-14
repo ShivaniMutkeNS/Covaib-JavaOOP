@@ -1,5 +1,5 @@
 
-import java.time.LocalDateTime;
+
 import java.util.List;
 import java.util.Map;
 
@@ -24,6 +24,12 @@ public class ExamDemo {
         
         // Test exam submission
         testExamSubmission();
+        
+        // Test time-based exam scenarios
+        testTimeBasedExam();
+        
+        // Test comprehensive exam scenario
+        testComprehensiveExam();
     }
     
     private static void testExamSession() {
