@@ -1,0 +1,2 @@
+# Inheritance
+Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class (child class) to inherit properties and behavior (methods) from another class (parent class). This promotes code reusability and establishes a relationship between classes.
