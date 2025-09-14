@@ -29,6 +29,9 @@ public class MoneyDemo {
         
         // Test edge cases
         testEdgeCases();
+        
+        // Test complex calculations
+        testComplexCalculations();
     }
     
     private static void testBasicMoneyCreation() {
