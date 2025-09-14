@@ -1,0 +1,60 @@
+=== Stock Trading System Demo ===
+
+=== Portfolio Creation ===
+Creating stock portfolio...
+Portfolio ID: PORT_001
+Initial cash: $100,000.00
+Initial holdings: 0
+
+=== Stock Purchases ===
+Buying 100 shares of AAPL at $150.00...
+✅ Purchase successful!
+Transaction ID: TXN_001
+Shares: 100
+Price: $150.00
+Total cost: $15,000.00
+Remaining cash: $85,000.00
+
+Buying 50 shares of GOOGL at $2,800.00...
+✅ Purchase successful!
+Transaction ID: TXN_002
+Shares: 50
+Price: $2,800.00
+Total cost: $140,000.00
+Remaining cash: -$55,000.00
+
+=== Portfolio Status ===
+Current holdings:
+- AAPL: 100 shares @ $150.00 = $15,000.00
+- GOOGL: 50 shares @ $2,800.00 = $140,000.00
+Total value: $155,000.00
+Available cash: -$55,000.00
+Total portfolio value: $100,000.00
+
+=== Stock Sales ===
+Selling 25 shares of AAPL at $160.00...
+✅ Sale successful!
+Transaction ID: TXN_003
+Shares: 25
+Price: $160.00
+Total proceeds: $4,000.00
+Remaining cash: -$51,000.00
+
+=== Transaction History ===
+Transaction 1: BUY AAPL 100 shares @ $150.00
+Transaction 2: BUY GOOGL 50 shares @ $2,800.00
+Transaction 3: SELL AAPL 25 shares @ $160.00
+
+=== Portfolio Analytics ===
+Total transactions: 3
+Buy transactions: 2
+Sell transactions: 1
+Total invested: $155,000.00
+Total proceeds: $4,000.00
+Net position: -$151,000.00
+
+=== Summary ===
+✅ Stock trading system working perfectly!
+✅ Buy/sell operations functional
+✅ Portfolio management working
+✅ Transaction tracking active

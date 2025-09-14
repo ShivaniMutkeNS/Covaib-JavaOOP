@@ -1,0 +1,67 @@
+=== Online Exam System Anti-Cheating Demo ===
+
+=== Student Registration ===
+Student: Alice Johnson (ID: S001)
+Exam: Java Programming Fundamentals
+Start Time: 2024-01-15T10:00:00
+Duration: 120 minutes
+
+=== Question 1: Multiple Choice ===
+Question: What is encapsulation in Java?
+Options: A) Data hiding, B) Inheritance, C) Polymorphism, D) Abstraction
+Student Answer: A
+Time Spent: 45 seconds
+✅ Answer recorded successfully
+
+=== Question 2: Code Writing ===
+Question: Write a method to calculate factorial
+Student Answer: public int factorial(int n) { if(n<=1) return 1; return n*factorial(n-1); }
+Time Spent: 180 seconds
+✅ Answer recorded successfully
+
+=== Question 3: True/False ===
+Question: Java supports multiple inheritance
+Student Answer: False
+Time Spent: 15 seconds
+✅ Answer recorded successfully
+
+=== Anti-Cheating Measures ===
+
+=== Time Monitoring ===
+Question 1: 45 seconds (Normal)
+Question 2: 180 seconds (Normal)
+Question 3: 15 seconds (Normal)
+Total time: 240 seconds
+Remaining time: 0 seconds
+✅ Time monitoring active
+
+=== Answer Validation ===
+Question 1: Valid answer format
+Question 2: Valid code syntax
+Question 3: Valid boolean answer
+✅ All answers validated
+
+=== Cheating Detection ===
+Tab switching detected: 0 times
+Copy-paste detected: 0 times
+Suspicious patterns: None
+✅ No cheating behavior detected
+
+=== Exam Submission ===
+Exam submitted successfully!
+Total questions: 3
+Answered questions: 3
+Time taken: 4 minutes
+Score: Pending evaluation
+
+=== Security Features ===
+✅ Answer integrity verified
+✅ Time tracking accurate
+✅ Anti-cheating measures active
+✅ Secure submission process
+
+=== Summary ===
+✅ Online exam system working perfectly!
+✅ Anti-cheating measures effective
+✅ Student answers properly recorded
+✅ Security features functioning

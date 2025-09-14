@@ -1,0 +1,47 @@
+=== IoT Sensor Data Stream Demo ===
+
+=== Sensor Initialization ===
+Creating IoT sensor...
+Sensor ID: TEMP_001
+Sensor Type: Temperature
+Location: Office Room A
+Initial reading: 22.5°C
+
+=== Data Collection ===
+Collecting sensor data...
+Reading 1: 22.5°C (2024-01-15T10:00:00)
+Reading 2: 23.1°C (2024-01-15T10:01:00)
+Reading 3: 22.8°C (2024-01-15T10:02:00)
+Reading 4: 23.5°C (2024-01-15T10:03:00)
+Reading 5: 24.0°C (2024-01-15T10:04:00)
+
+=== Data Processing ===
+Current temperature: 24.0°C
+Average temperature: 23.18°C
+Maximum temperature: 24.0°C
+Minimum temperature: 22.5°C
+Temperature trend: Rising
+
+=== Alert System ===
+Temperature threshold: 25.0°C
+Current temperature: 24.0°C
+Alert status: Normal
+Alert level: NONE
+
+Temperature increased to 26.0°C...
+⚠️ ALERT: Temperature exceeded threshold!
+Alert level: WARNING
+Alert message: Temperature 26.0°C exceeds threshold 25.0°C
+
+=== Data Analytics ===
+Total readings: 6
+Data points: 6
+Time range: 4 minutes
+Data quality: Good
+Sensor status: Active
+
+=== Summary ===
+✅ IoT sensor system working perfectly!
+✅ Data collection functional
+✅ Processing algorithms working
+✅ Alert system active

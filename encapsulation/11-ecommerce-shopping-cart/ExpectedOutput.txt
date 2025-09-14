@@ -1,0 +1,55 @@
+=== E-commerce Shopping Cart Demo ===
+
+=== Shopping Cart Creation ===
+Creating shopping cart...
+Cart ID: CART_001
+Initial item count: 0
+Initial total: $0.00
+
+=== Adding Items ===
+Adding laptop to cart...
+✅ Item added: Laptop (Quantity: 1, Price: $999.99)
+Adding mouse to cart...
+✅ Item added: Mouse (Quantity: 2, Price: $29.99)
+Adding keyboard to cart...
+✅ Item added: Keyboard (Quantity: 1, Price: $79.99)
+
+=== Cart Operations ===
+Current cart contents:
+- Laptop: 1 x $999.99 = $999.99
+- Mouse: 2 x $29.99 = $59.98
+- Keyboard: 1 x $79.99 = $79.99
+Total: $1,139.96
+
+=== Quantity Management ===
+Updating mouse quantity to 3...
+✅ Quantity updated: Mouse now 3 x $29.99 = $89.97
+New total: $1,169.95
+
+Removing keyboard from cart...
+✅ Item removed: Keyboard
+New total: $1,089.97
+
+=== Price Protection ===
+Attempting to change item price...
+❌ Cannot modify item prices directly
+Price protection active!
+
+=== Cart Validation ===
+Cart is valid: true
+Item count: 2
+Total amount: $1,089.97
+Last updated: 2024-01-15T10:30:00
+
+=== Checkout Process ===
+Proceeding to checkout...
+✅ Checkout successful!
+Order total: $1,089.97
+Items: 2
+Cart cleared after checkout
+
+=== Summary ===
+✅ Shopping cart system working perfectly!
+✅ Item management functional
+✅ Price protection active
+✅ Checkout process working

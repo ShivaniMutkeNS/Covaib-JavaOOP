@@ -1,0 +1,71 @@
+=== Game Character Attributes Demo ===
+
+=== Character Creation ===
+Creating game character...
+Name: Warrior
+Level: 1
+Health: 100
+Mana: 50
+Stamina: 100
+Experience: 0
+Status: ALIVE
+
+=== Attribute Management ===
+Setting health to 150...
+✅ Health set to 150
+Setting mana to 75...
+✅ Mana set to 75
+Setting stamina to 120...
+✅ Stamina set to 120
+
+=== Experience and Leveling ===
+Adding 500 experience points...
+✅ Experience added: 500
+New level: 2
+Health increased to: 200
+Mana increased to: 100
+Stamina increased to: 150
+
+=== Item Management ===
+Adding sword to inventory...
+✅ Item added: Sword (Quantity: 1)
+Adding potion to inventory...
+✅ Item added: Potion (Quantity: 3)
+Adding shield to inventory...
+✅ Item added: Shield (Quantity: 1)
+
+=== Combat Operations ===
+Using stamina for attack...
+✅ Stamina used: 20
+Remaining stamina: 130
+Using mana for spell...
+✅ Mana used: 30
+Remaining mana: 70
+
+=== Status Management ===
+Character status: ALIVE
+Is alive: true
+Can perform actions: true
+Health percentage: 100.0%
+
+=== Death State ===
+Setting health to 0...
+Character died!
+Status: DEAD
+Is alive: false
+Can perform actions: false
+
+=== Dead Character Operations ===
+Attempting to use stamina while dead...
+❌ Cannot use stamina while dead
+Attempting to add item while dead...
+❌ Cannot add items while dead
+Attempting to use mana while dead...
+❌ Cannot use mana while dead
+
+=== Summary ===
+✅ Game character system working perfectly!
+✅ Attributes properly managed
+✅ Leveling system functional
+✅ Item management working
+✅ Status control effective
