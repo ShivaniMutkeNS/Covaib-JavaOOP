@@ -1,0 +1,2 @@
+# Encapsulation
+Encapsulation bundles data and methods operating on the data into a single unit, the class. It restricts direct access to some of the object's components, which is a means of preventing unintended data modification.
