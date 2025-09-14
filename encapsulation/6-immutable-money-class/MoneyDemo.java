@@ -203,14 +203,14 @@ public class MoneyDemo {
         
         // Test invalid conversion
         try {
-            Money invalid = usdMoney.convertTo(Money.EUR, -0.85);
+            usdMoney.convertTo(Money.EUR, -0.85);
             System.out.println("ERROR: Should not allow negative exchange rate");
         } catch (IllegalArgumentException e) {
             System.out.println("✓ Correctly prevented negative exchange rate: " + e.getMessage());
         }
         
         try {
-            Money invalid = usdMoney.convertTo(Money.EUR, 0.0);
+            usdMoney.convertTo(Money.EUR, 0.0);
             System.out.println("ERROR: Should not allow zero exchange rate");
         } catch (IllegalArgumentException e) {
             System.out.println("✓ Correctly prevented zero exchange rate: " + e.getMessage());

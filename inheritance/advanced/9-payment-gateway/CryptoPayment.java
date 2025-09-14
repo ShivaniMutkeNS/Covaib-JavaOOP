@@ -1,12 +1,10 @@
 public class CryptoPayment extends Payment {
     private String cryptoType;
     private String walletAddress;
-    private String privateKey;
     private double cryptoAmount;
     private double exchangeRate;
     private String network;
     private boolean isVerified;
-    private String verificationMethod;
     private double gasFee;
     private String transactionHash;
     
@@ -20,7 +18,6 @@ public class CryptoPayment extends Payment {
         this.exchangeRate = getExchangeRate(cryptoType);
         this.cryptoAmount = amount / exchangeRate;
         this.isVerified = false;
-        this.verificationMethod = "";
         this.gasFee = 0.0;
         this.transactionHash = "";
     }
