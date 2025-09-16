@@ -185,7 +185,6 @@ public class AutonomousVehicle extends SmartVehicle {
     
     private double calculateSafeSpeed(double requestedSpeed) {
         double maxSpeed = (Double) configuration.get("maxSpeed");
-        double safetyMargin = (Double) aiSystem.get("safety_margin_meters");
         
         // Factor in detected objects and conditions
         double speedReduction = 0.0;
