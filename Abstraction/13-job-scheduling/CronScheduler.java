@@ -154,7 +154,7 @@ public class CronScheduler extends JobScheduler {
     
     public void printCronSchedule() {
         System.out.println("\n⏰ CRON SCHEDULE");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         if (cronExpressions.isEmpty()) {
             System.out.println("No cron jobs scheduled");
@@ -162,7 +162,7 @@ public class CronScheduler extends JobScheduler {
         }
         
         System.out.printf("%-20s %-15s %-20s%n", "Job Name", "Cron Expression", "Next Execution");
-        System.out.println("-".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '-'));
         
         for (Map.Entry<Job, String> entry : cronExpressions.entrySet()) {
             Job job = entry.getKey();

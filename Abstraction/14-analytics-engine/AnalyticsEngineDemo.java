@@ -11,7 +11,7 @@ public class AnalyticsEngineDemo {
     
     public static void main(String[] args) {
         System.out.println("📊 ANALYTICS ENGINE SYSTEM DEMONSTRATION");
-        System.out.println("=" .repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         // Create different types of analytics engines
         DescriptiveAnalyticsEngine descriptiveEngine = new DescriptiveAnalyticsEngine("Descriptive Analytics");
@@ -49,9 +49,9 @@ public class AnalyticsEngineDemo {
     }
     
     private static void createSampleDataSources(AnalyticsEngine[] engines) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("📊 CREATING SAMPLE DATA SOURCES");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         // Sales data source
         DataSource salesData = new DataSource("sales_001", "Sales Transactions", DataSourceType.DATABASE);
@@ -117,9 +117,9 @@ public class AnalyticsEngineDemo {
     }
     
     private static void demonstrateDescriptiveAnalytics(DescriptiveAnalyticsEngine engine) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("📈 DEMO 1: DESCRIPTIVE ANALYTICS");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         // Initialize and configure engine
         engine.initialize();
@@ -148,9 +148,9 @@ public class AnalyticsEngineDemo {
     }
     
     private static void demonstratePredictiveAnalytics(PredictiveAnalyticsEngine engine) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("🔮 DEMO 2: PREDICTIVE ANALYTICS");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         // Initialize and train model
         engine.initialize();
@@ -183,9 +183,9 @@ public class AnalyticsEngineDemo {
     }
     
     private static void demonstrateRealTimeAnalytics(RealTimeAnalyticsEngine engine) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("⚡ DEMO 3: REAL-TIME ANALYTICS");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         // Initialize and configure alerts
         engine.initialize();
@@ -221,9 +221,9 @@ public class AnalyticsEngineDemo {
     }
     
     private static void demonstrateBehavioralAnalytics(BehavioralAnalyticsEngine engine) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("👥 DEMO 4: BEHAVIORAL ANALYTICS");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         // Initialize and train model
         engine.initialize();
@@ -265,9 +265,9 @@ public class AnalyticsEngineDemo {
     }
     
     private static void demonstrateEngineComparison(AnalyticsEngine[] engines) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("⚖️ DEMO 5: ANALYTICS ENGINE COMPARISON");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         // Run similar analysis across different engines
         Map<String, Object> commonParams = new HashMap<>();
@@ -275,10 +275,10 @@ public class AnalyticsEngineDemo {
         commonParams.put("timeRange", "month");
         
         System.out.println("📊 ANALYTICS CAPABILITIES COMPARISON:");
-        System.out.println("-".repeat(80));
+        System.out.println(new String(new char[80]).replace('\0', '-'));
         System.out.printf("%-20s %-25s %-15s %-15s%n", 
                          "Engine", "Type", "Analyses", "Avg Confidence");
-        System.out.println("-".repeat(80));
+        System.out.println(new String(new char[80]).replace('\0', '-'));
         
         for (AnalyticsEngine engine : engines) {
             String engineName = engine.getEngineName().length() > 18 ? 

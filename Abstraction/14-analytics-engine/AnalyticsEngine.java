@@ -130,7 +130,7 @@ public abstract class AnalyticsEngine {
     
     public void printStatistics() {
         System.out.println("\n📈 ENGINE STATISTICS: " + engineName);
-        System.out.println("=".repeat(50));
+        System.out.println(new String(new char[50]).replace('\0', '='));
         System.out.println("Type: " + supportedType.getDisplayName());
         System.out.println("Status: " + (isInitialized ? "Initialized" : "Not Initialized"));
         System.out.println("Data Sources: " + dataSources.size());

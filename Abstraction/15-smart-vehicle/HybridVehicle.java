@@ -327,7 +327,7 @@ public class HybridVehicle extends SmartVehicle {
         
         StringBuilder report = new StringBuilder();
         report.append("\n⚡🔥 HYBRID EFFICIENCY REPORT\n");
-        report.append("=".repeat(40)).append("\n");
+        report.append(new String(new char[40]).replace('\0', '=')).append("\n");
         report.append(String.format("Combined Efficiency: %.1f km/L\n", fuelEff));
         report.append(String.format("Electric Usage: %.1f%%\n", electricUsage));
         report.append(String.format("Gasoline Usage: %.1f%%\n", gasolineUsage));
@@ -352,7 +352,7 @@ public class HybridVehicle extends SmartVehicle {
         super.printVehicleInfo();
         
         System.out.println("⚡🔥 HYBRID VEHICLE DETAILS");
-        System.out.println("=".repeat(40));
+        System.out.println(new String(new char[40]).replace('\0', '='));
         System.out.println("Fuel Tank Capacity: " + fuelTankCapacityLiters + " L");
         System.out.println("Battery Capacity: " + batteryCapacityKwh + " kWh");
         System.out.println("Current Fuel: " + String.format("%.1f%%", status.getFuelLevel()));

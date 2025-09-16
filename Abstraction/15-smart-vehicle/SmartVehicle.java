@@ -246,7 +246,7 @@ public abstract class SmartVehicle {
     
     public void printVehicleInfo() {
         System.out.println("\n🚗 VEHICLE INFORMATION");
-        System.out.println("=".repeat(50));
+        System.out.println(new String(new char[50]).replace('\0', '='));
         System.out.println("ID: " + vehicleId);
         System.out.println("Make/Model: " + make + " " + model + " (" + year + ")");
         System.out.println("Type: " + vehicleType.getDisplayName());
