@@ -8,7 +8,7 @@ public class SmartVehicleDemo {
     
     public static void main(String[] args) {
         System.out.println("🚗 SMART VEHICLE SYSTEM DEMONSTRATION");
-        System.out.println("=" .repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         // Create different types of smart vehicles
         ElectricVehicle tesla = new ElectricVehicle("Tesla", "Model S", 2024, AutonomyLevel.LEVEL_3, "Alice Johnson", 100.0);
@@ -43,15 +43,15 @@ public class SmartVehicleDemo {
     }
     
     private static void demonstrateElectricVehicle(ElectricVehicle tesla) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("⚡ DEMO 1: ELECTRIC VEHICLE FEATURES");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         tesla.printVehicleInfo();
         
         // Test charging capabilities
         System.out.println("🔌 Testing charging capabilities...");
-        tesla.setBatteryLevel(25.0); // Simulate partially depleted battery
+        tesla.getStatus().setBatteryLevel(25.0); // Simulate partially depleted battery
         tesla.startCharging("fast");
         
         // Wait for some charging
@@ -78,9 +78,9 @@ public class SmartVehicleDemo {
     }
     
     private static void demonstrateAutonomousVehicle(AutonomousVehicle waymo) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("🤖 DEMO 2: AUTONOMOUS VEHICLE CAPABILITIES");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         waymo.printVehicleInfo();
         
@@ -112,9 +112,9 @@ public class SmartVehicleDemo {
     }
     
     private static void demonstrateHybridVehicle(HybridVehicle prius) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("⚡🔥 DEMO 3: HYBRID VEHICLE EFFICIENCY");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         prius.printVehicleInfo();
         
@@ -134,7 +134,7 @@ public class SmartVehicleDemo {
         }
         
         // Test battery charging
-        prius.setBatteryLevel(30.0);
+        prius.getStatus().setBatteryLevel(30.0);
         prius.chargeBattery();
         
         // Wait for some charging
@@ -151,15 +151,15 @@ public class SmartVehicleDemo {
     }
     
     private static void demonstrateVehicleComparison(SmartVehicle[] vehicles) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("📊 DEMO 4: VEHICLE COMPARISON & FLEET MANAGEMENT");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         System.out.println("🚗 VEHICLE FLEET OVERVIEW:");
-        System.out.println("-".repeat(80));
+        System.out.println(new String(new char[80]).replace('\0', '-'));
         System.out.printf("%-15s %-15s %-15s %-15s %-15s%n", 
                          "Make/Model", "Type", "Autonomy", "Fuel Type", "Status");
-        System.out.println("-".repeat(80));
+        System.out.println(new String(new char[80]).replace('\0', '-'));
         
         for (SmartVehicle vehicle : vehicles) {
             String makeModel = (vehicle.getMake() + " " + vehicle.getModel()).length() > 13 ?
@@ -212,9 +212,9 @@ public class SmartVehicleDemo {
     }
     
     private static void demonstrateAdvancedFeatures(SmartVehicle[] vehicles) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("🚀 DEMO 5: ADVANCED FEATURES INTEGRATION");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         // Network connectivity
         System.out.println("📡 Testing network connectivity:");
@@ -228,9 +228,9 @@ public class SmartVehicleDemo {
         
         // Advanced sensor demonstration
         System.out.println("\n📡 SENSOR CAPABILITIES COMPARISON:");
-        System.out.println("-".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '-'));
         System.out.printf("%-20s %-10s %-30s%n", "Vehicle", "Sensors", "Advanced Features");
-        System.out.println("-".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '-'));
         
         for (SmartVehicle vehicle : vehicles) {
             String vehicleName = (vehicle.getMake() + " " + vehicle.getModel()).length() > 18 ?

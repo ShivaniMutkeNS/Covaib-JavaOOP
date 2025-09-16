@@ -373,7 +373,7 @@ public class AutonomousVehicle extends SmartVehicle {
         super.printVehicleInfo();
         
         System.out.println("🤖 AUTONOMOUS VEHICLE DETAILS");
-        System.out.println("=".repeat(40));
+        System.out.println(new String(new char[40]).replace('\0', '='));
         System.out.println("AI System Version: " + aiSystem.get("neural_network_version"));
         System.out.println("Decision Confidence: " + String.format("%.1f%%", 
             (Double) aiSystem.get("decision_confidence") * 100));

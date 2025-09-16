@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.time.LocalDateTime;
@@ -25,8 +26,8 @@ public abstract class JobScheduler {
         this.totalCpuCapacity = cpuCapacity;
         this.totalMemoryCapacity = memoryCapacity;
         this.jobQueue = new ConcurrentLinkedQueue<>();
-        this.runningJobs = new java.util.ArrayList<>();
-        this.completedJobs = new java.util.ArrayList<>();
+        this.runningJobs = new ArrayList<>();
+        this.completedJobs = new ArrayList<>();
         this.isRunning = false;
         this.usedCpuCapacity = 0.0;
         this.usedMemoryCapacity = 0.0;
@@ -170,7 +171,7 @@ public abstract class JobScheduler {
     
     public void printStatus() {
         System.out.println("\n📊 SCHEDULER STATUS: " + schedulerName);
-        System.out.println("=".repeat(50));
+        System.out.println(new String(new char[50]).replace('\0', '='));
         System.out.println("Strategy: " + getSchedulingStrategy());
         System.out.println("Status: " + (isRunning ? "Running" : "Stopped"));
         System.out.println("Jobs in Queue: " + jobQueue.size());

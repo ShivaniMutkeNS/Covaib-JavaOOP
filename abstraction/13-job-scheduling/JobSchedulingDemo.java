@@ -9,7 +9,7 @@ public class JobSchedulingDemo {
     
     public static void main(String[] args) {
         System.out.println("🚀 JOB SCHEDULING SYSTEM DEMONSTRATION");
-        System.out.println("=" .repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         // Create different types of schedulers
         PriorityScheduler priorityScheduler = new PriorityScheduler("Priority Scheduler", 3, 8.0, 16.0);
@@ -44,9 +44,9 @@ public class JobSchedulingDemo {
     }
     
     private static void demonstratePriorityScheduling(PriorityScheduler scheduler) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("🔥 DEMO 1: PRIORITY SCHEDULING");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         // Create jobs with different priorities
         Job criticalJob = new Job("Database Backup", "Critical system backup", JobPriority.CRITICAL, "admin");
@@ -59,7 +59,7 @@ public class JobSchedulingDemo {
         highJob.setCpuRequirement(1.5);
         highJob.setMemoryRequirement(2.0);
         
-        Job mediumJob = new Job("Log Analysis", "Analyze system logs", JobPriority.MEDIUM, "analyst");
+        Job mediumJob = new Job("Log Analysis", "Analyze system logs", JobPriority.NORMAL, "analyst");
         mediumJob.setEstimatedDuration(Duration.ofSeconds(2));
         mediumJob.setCpuRequirement(1.0);
         mediumJob.setMemoryRequirement(1.0);
@@ -97,16 +97,16 @@ public class JobSchedulingDemo {
     }
     
     private static void demonstrateRoundRobinScheduling(RoundRobinScheduler scheduler) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("🔄 DEMO 2: ROUND ROBIN SCHEDULING");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         // Create jobs with similar resource requirements
         Job[] jobs = {
-            new Job("Task A", "Processing task A", JobPriority.MEDIUM, "user1"),
-            new Job("Task B", "Processing task B", JobPriority.MEDIUM, "user2"),
-            new Job("Task C", "Processing task C", JobPriority.MEDIUM, "user3"),
-            new Job("Task D", "Processing task D", JobPriority.MEDIUM, "user4")
+            new Job("Task A", "Processing task A", JobPriority.NORMAL, "user1"),
+            new Job("Task B", "Processing task B", JobPriority.NORMAL, "user2"),
+            new Job("Task C", "Processing task C", JobPriority.NORMAL, "user3"),
+            new Job("Task D", "Processing task D", JobPriority.NORMAL, "user4")
         };
         
         // Set similar durations and requirements
@@ -139,12 +139,12 @@ public class JobSchedulingDemo {
     }
     
     private static void demonstrateCronScheduling(CronScheduler scheduler) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("⏰ DEMO 3: CRON SCHEDULING");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         // Create scheduled jobs
-        Job dailyReport = new Job("Daily Report", "Generate daily analytics report", JobPriority.MEDIUM, "reporter");
+        Job dailyReport = new Job("Daily Report", "Generate daily analytics report", JobPriority.NORMAL, "reporter");
         dailyReport.setEstimatedDuration(Duration.ofSeconds(2));
         scheduler.scheduleJobWithCron(dailyReport, CronScheduler.daily());
         
@@ -180,9 +180,9 @@ public class JobSchedulingDemo {
     }
     
     private static void demonstrateFairShareScheduling(FairShareScheduler scheduler) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("⚖️ DEMO 4: FAIR SHARE SCHEDULING");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         // Allocate shares to different users
         scheduler.allocateUserShare("alice", 40.0);
@@ -199,7 +199,7 @@ public class JobSchedulingDemo {
             String taskType = taskTypes[i % taskTypes.length];
             
             Job job = new Job(user + "'s " + taskType + " " + (i/users.length + 1), 
-                            "Task for user " + user, JobPriority.MEDIUM, user);
+                            "Task for user " + user, JobPriority.NORMAL, user);
             job.setEstimatedDuration(Duration.ofSeconds(2));
             job.setCpuRequirement(1.0);
             job.setMemoryRequirement(1.0);
@@ -233,9 +233,9 @@ public class JobSchedulingDemo {
     }
     
     private static void demonstrateSchedulerComparison(JobScheduler[] schedulers) {
-        System.out.println("\n" + "=".repeat(60));
+        System.out.println("\n" + new String(new char[60]).replace('\0', '='));
         System.out.println("📊 DEMO 5: SCHEDULER COMPARISON");
-        System.out.println("=".repeat(60));
+        System.out.println(new String(new char[60]).replace('\0', '='));
         
         // Create identical job sets for each scheduler
         for (JobScheduler scheduler : schedulers) {
@@ -273,10 +273,10 @@ public class JobSchedulingDemo {
         
         // Stop all schedulers and show results
         System.out.println("\n📊 FINAL COMPARISON RESULTS:");
-        System.out.println("-".repeat(80));
+        System.out.println(new String(new char[80]).replace('\0', '-'));
         System.out.printf("%-20s %-15s %-10s %-10s %-15s%n", 
                          "Scheduler", "Strategy", "Completed", "Running", "Efficiency");
-        System.out.println("-".repeat(80));
+        System.out.println(new String(new char[80]).replace('\0', '-'));
         
         for (JobScheduler scheduler : schedulers) {
             scheduler.stop();

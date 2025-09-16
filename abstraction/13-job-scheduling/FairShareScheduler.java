@@ -186,10 +186,10 @@ public class FairShareScheduler extends JobScheduler {
     
     public void printFairShareStatus() {
         System.out.println("\n⚖️ FAIR SHARE STATUS");
-        System.out.println("=".repeat(70));
+        System.out.println(new String(new char[70]).replace('\0', '='));
         System.out.printf("%-15s %-10s %-10s %-10s %-10s %-10s%n", 
                          "User", "Share %", "Usage", "Ratio", "Jobs", "Status");
-        System.out.println("-".repeat(70));
+        System.out.println(new String(new char[70]).replace('\0', '-'));
         
         for (String owner : userShares.keySet()) {
             double share = userShares.get(owner);

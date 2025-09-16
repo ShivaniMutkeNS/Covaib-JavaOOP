@@ -68,7 +68,7 @@ public class PriorityScheduler extends JobScheduler {
     
     public void printPriorityQueue() {
         System.out.println("\n📊 PRIORITY QUEUE STATUS");
-        System.out.println("=".repeat(40));
+        System.out.println("========================================");
         
         if (priorityQueue.isEmpty()) {
             System.out.println("No jobs in priority queue");

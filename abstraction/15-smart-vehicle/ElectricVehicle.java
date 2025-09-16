@@ -250,7 +250,7 @@ public class ElectricVehicle extends SmartVehicle {
         double total = energyConsumption.values().stream().mapToDouble(Double::doubleValue).sum();
         
         System.out.println("\n⚡ ENERGY CONSUMPTION REPORT");
-        System.out.println("=".repeat(40));
+        System.out.println(new String(new char[40]).replace('\0', '='));
         for (Map.Entry<String, Double> entry : report.entrySet()) {
             double percentage = total > 0 ? (entry.getValue() / total) * 100 : 0;
             System.out.println(String.format("%-12s: %6.2f kWh (%4.1f%%)", 
@@ -275,7 +275,7 @@ public class ElectricVehicle extends SmartVehicle {
         super.printVehicleInfo();
         
         System.out.println("🔋 ELECTRIC VEHICLE DETAILS");
-        System.out.println("=".repeat(40));
+        System.out.println(new String(new char[40]).replace('\0', '='));
         System.out.println("Battery Capacity: " + batteryCapacityKwh + " kWh");
         System.out.println("Current Battery: " + String.format("%.1f%%", status.getBatteryLevel()));
         System.out.println("Estimated Range: " + String.format("%.1f", calculateRange()) + " km");

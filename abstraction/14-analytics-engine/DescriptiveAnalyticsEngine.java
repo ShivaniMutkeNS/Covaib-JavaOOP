@@ -55,7 +55,7 @@ public class DescriptiveAnalyticsEngine extends AnalyticsEngine {
         
         // Cache results if enabled
         if (enableCaching) {
-            String cacheKey = analysisName + "_" + metric;
+            String cacheKey = result.getAnalysisName() + "_" + metric;
             aggregationCache.put(cacheKey + "_mean", mean);
             aggregationCache.put(cacheKey + "_median", median);
         }
