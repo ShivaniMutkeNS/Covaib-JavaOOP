@@ -27,6 +27,9 @@ public class HealthcareDemo {
         
         // Display access logs
         displayAccessLogs(patient);
+        
+        // Test patient summary for different roles
+        testPatientSummary(patient);
     }
     
     private static void testDoctorAccess(PatientRecord patient) {

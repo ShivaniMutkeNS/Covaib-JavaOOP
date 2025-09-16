@@ -25,6 +25,12 @@ public class AuditLogDemo {
         
         // Test immutability
         testImmutability();
+        
+        // Test audit log with additional data
+        testAuditLogWithAdditionalData();
+        
+        // Test audit log summary
+        testAuditLogSummary();
     }
     
     private static void testBasicAuditLog() {

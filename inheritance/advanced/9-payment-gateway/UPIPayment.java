@@ -3,9 +3,7 @@ public class UPIPayment extends Payment {
     private String bankName;
     private String accountNumber;
     private String ifscCode;
-    private String pin;
     private boolean isVerified;
-    private String verificationMethod;
     
     public UPIPayment(String paymentId, String customerId, double amount, String currency, 
                      String description, String merchantId, String orderId, String upiId, 
@@ -15,9 +13,7 @@ public class UPIPayment extends Payment {
         this.bankName = bankName;
         this.accountNumber = accountNumber;
         this.ifscCode = ifscCode;
-        this.pin = "";
         this.isVerified = false;
-        this.verificationMethod = "";
     }
     
     @Override

@@ -23,6 +23,9 @@ public class VersionedDocumentDemo {
         
         // Test document metadata
         testDocumentMetadata();
+        
+        // Test document with many versions
+        testManyVersions();
     }
     
     private static void testDocumentCreationAndVersioning() {

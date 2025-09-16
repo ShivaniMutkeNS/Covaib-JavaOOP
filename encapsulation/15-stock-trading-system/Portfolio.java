@@ -73,6 +73,16 @@ public class Portfolio {
             return new TransactionResult(false, "Insufficient funds", null);
         }
         
+        // Check position size limit
+        if (totalCost.compareTo(config.getMaxPositionSize()) > 0) {
+            return new TransactionResult(false, "Position size exceeds maximum limit", null);
+        }
+        
+        // Check maximum holdings limit
+        if (holdings.size() >= config.getMaxHoldings() && !holdings.containsKey(symbol)) {
+            return new TransactionResult(false, "Maximum number of holdings reached", null);
+        }
+        
         // Create transaction
         Transaction transaction = new Transaction(
             generateTransactionId(),

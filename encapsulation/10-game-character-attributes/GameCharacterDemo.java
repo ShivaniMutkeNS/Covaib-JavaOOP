@@ -1,5 +1,5 @@
 
-import java.time.LocalDateTime;
+
 import java.util.Map;
 
 /**
@@ -23,6 +23,12 @@ public class GameCharacterDemo {
         
         // Test invalid operations
         testInvalidOperations();
+        
+        // Test resting functionality
+        testResting();
+        
+        // Test inventory limits
+        testInventoryLimits();
     }
     
     private static void testCharacterCreation() {

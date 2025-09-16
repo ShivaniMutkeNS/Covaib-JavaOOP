@@ -29,6 +29,9 @@ public class MoneyDemo {
         
         // Test edge cases
         testEdgeCases();
+        
+        // Test complex calculations
+        testComplexCalculations();
     }
     
     private static void testBasicMoneyCreation() {
@@ -123,21 +126,21 @@ public class MoneyDemo {
         
         // Test currency validation
         try {
-            Money invalid = usdMoney.add(eurMoney);
+            usdMoney.add(eurMoney);
             System.out.println("ERROR: Should not allow different currencies");
         } catch (IllegalArgumentException e) {
             System.out.println("✓ Correctly prevented different currency addition: " + e.getMessage());
         }
         
         try {
-            Money invalid = usdMoney.subtract(eurMoney);
+            usdMoney.subtract(eurMoney);
             System.out.println("ERROR: Should not allow different currencies");
         } catch (IllegalArgumentException e) {
             System.out.println("✓ Correctly prevented different currency subtraction: " + e.getMessage());
         }
         
         try {
-            boolean comparison = usdMoney.isGreaterThan(eurMoney);
+            usdMoney.isGreaterThan(eurMoney);
             System.out.println("ERROR: Should not allow different currency comparison");
         } catch (IllegalArgumentException e) {
             System.out.println("✓ Correctly prevented different currency comparison: " + e.getMessage());
@@ -203,14 +206,14 @@ public class MoneyDemo {
         
         // Test invalid conversion
         try {
-            Money invalid = usdMoney.convertTo(Money.EUR, -0.85);
+            usdMoney.convertTo(Money.EUR, -0.85);
             System.out.println("ERROR: Should not allow negative exchange rate");
         } catch (IllegalArgumentException e) {
             System.out.println("✓ Correctly prevented negative exchange rate: " + e.getMessage());
         }
         
         try {
-            Money invalid = usdMoney.convertTo(Money.EUR, 0.0);
+            usdMoney.convertTo(Money.EUR, 0.0);
             System.out.println("ERROR: Should not allow zero exchange rate");
         } catch (IllegalArgumentException e) {
             System.out.println("✓ Correctly prevented zero exchange rate: " + e.getMessage());
