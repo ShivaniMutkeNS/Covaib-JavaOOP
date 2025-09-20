@@ -1,15 +1,14 @@
-# Composition, Aggregation & Association - Advanced Java Systems
+# Composition, Aggregation & Association - Master Index
 
-## 📋 Table of Contents
-- [Overview](#overview)
-- [Design Patterns & Relationships](#design-patterns--relationships)
-- [Project Implementations](#project-implementations)
-- [Key Learning Outcomes](#key-learning-outcomes)
-- [How to Run](#how-to-run)
+This directory contains 15 comprehensive Java projects demonstrating the concepts of **Composition**, **Aggregation**, and **Association** in Object-Oriented Programming. Each project showcases how these relationships create robust, maintainable, and scalable software systems.
 
-## 🎯 Overview
+## 🎯 Learning Objectives
+- Understand the differences between composition, aggregation, and association
+- Learn to design proper object relationships and dependencies
+- Master "has-a" and "uses-a" relationships in OOP
+- Practice creating enterprise-level system architectures
 
-This repository contains 15 comprehensive Java projects demonstrating **Composition**, **Aggregation**, and **Association** relationships through real-world enterprise-level systems. Each project showcases advanced object-oriented design principles, design patterns, and modern Java programming techniques.
+## 📚 Projects Overview
 
 ### 🏗️ Design Patterns & Relationships
 
