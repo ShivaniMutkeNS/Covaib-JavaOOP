@@ -9,7 +9,7 @@ This repository contains a **sample OOP Java production level implementation mod
 
 ## 📌 About CoVaib DeepPrep  
 **CoVaib** is the umbrella brand.  
-**CoVaib DeepPrep** is our specialized subsidiary dedicated to **premium course content** for developers aiming for **top-tier careers**.  
+**CoVaib DeepPrep** is our specialized subsidiary dedicated to **premium learning content** for developers aiming for **top-tier careers**.  
 
 We don’t just prepare you for interviews – we **engineer mastery**.  
 
